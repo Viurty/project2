@@ -1,0 +1,76 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Результат</title>
+    <style>
+    body {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        background-image: url('../static/back.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin: 0;
+        font-family: Arial, sans-serif;
+    }
+    .container {
+        display: flex;
+        justify-content: space-around;
+        width: 80%;
+        background-color: rgba(255, 255, 255, 0.8);
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    }
+    .block {
+        width: 45%;
+        padding: 10px;
+        text-align: center;
+        background-color: #f0f0f0;
+        border-radius: 8px;
+    }
+    .weather {
+        white-space: pre-line;
+        line-height: 1.5;
+        margin-bottom: 10px;
+        font-size: 1rem;
+    }
+    .result {
+        font-weight: bold;
+        font-size: 1.1rem;
+    }
+    .result.red {
+        color: #d9534f;
+    }
+    .result.yellow {
+        color: #f0ad4e;
+    }
+    .result.green {
+        color: #5cb85c;
+    }
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    </style>
+</head>
+<body>
+    <h1>Прогноз погоды для маршрута:</h1>
+    <div class="container">
+        <div class="block">
+            <h2>В городе {{start_city}} на сегодняшний день:</h2>
+            <p class="weather">{{start_weather}}</p>
+            <p class="result {{start_color}}">{{start_res}}</p>
+        </div>
+        <div class="block">
+            <h2>В городе {{end_city}} через {{day}} дней ожидается:</h2>
+            <p class="weather">{{end_weather}}</p>
+            <p class="result {{end_color}}">{{end_res}}</p>
+        </div>
+    </div>
+</body>
+</html>
