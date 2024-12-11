@@ -67,12 +67,7 @@ def days(day):
         return f'{day} дня'
     else:
         return '5 дней'
-# data = {'Moscow': {'min_temperature': 15.0, 'max_temperature': 15.0, 'humidity': 50, 'wind_speed': 24.0, 'probability_rain': 0, 'probability_snow': 40}, 'London': {'min_temperature': 7.0, 'max_temperature': 8.0, 'humidity': 87, 'wind_speed': 29.0, 'probability_rain': 91, 'probability_snow': 0}}
-# logic = Logic(data,'Moscow','London')
-# print(logic.get_res_start())
-# print(logic.get_res_end())
-#
-#
+
 
 
 

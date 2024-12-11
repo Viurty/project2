@@ -1,9 +1,9 @@
 from flask import Flask
-from flask import jsonify
 from flask import request
 from flask import render_template
-from weather_forecast import Forecast
+from weather_forecast import Forecast, error503
 from weather_logic import Logic, days
+
 
 app = Flask(__name__)
 
@@ -19,7 +19,8 @@ def form():
         forecast = Forecast(start_city, end_city, 0, day_end)
         try:
             logic = Logic(forecast.get_all_data(), start_city, end_city)
-            #Проблемы с запросом, либо не найден город, либо закончились токены
+        except error503:
+            return render_template('error.html',error='Проблема с подключением к серверу.')
         except:
             return render_template('error.html',error='Неправильно введено имя города. Попробуйте написать город на английском.')
         start_color, start_res = logic.get_res_start()

@@ -1,10 +1,17 @@
 import requests
 #'spfT2R28NnnmtGlikbyhDGsr2MR8VJyk'
 #CskMp9tC6VxIjbWt72u2J2wxkJyjGgJw
+#'Yi2HypX2aKkLobtuwcA96VmxLuDerEZI'
+class error503(Exception):
+    def __init__(self,text):
+        self.txt = text
+
+
+
 class Forecast():
 
     def __init__(self,starting_city,ending_city,day_start,day_end):
-        self.api = 'Yi2HypX2aKkLobtuwcA96VmxLuDerEZI'
+        self.api = 'spfT2R28NnnmtGlikbyhDGsr2MR8VJyk'
         self.url_weather = 'http://dataservice.accuweather.com/forecasts/v1/daily/5day/'
         self.url_city = 'http://dataservice.accuweather.com/locations/v1/cities/search'
         self.start = starting_city
@@ -14,7 +21,10 @@ class Forecast():
         self.data = dict()
 
     def search_city_start(self):
-        starting_id = requests.get(self.url_city,params={'apikey' : self.api, 'q' : self.start}).json()[0]['Key']
+        r = requests.get(self.url_city,params={'apikey' : self.api, 'q' : self.start})
+        if r.status_code == 503:
+            raise error503('Проблема с подключением к серверу')
+        starting_id = r.json()[0]['Key']
         return starting_id
 
     def search_city_end(self):
@@ -75,11 +85,5 @@ class Forecast():
         else:
             prob = f'Вероятность выпадения снега: {prob_snow}%'
         wind = data['wind_speed']
-        message = f'Минимальная температура: {min_temp}°C, Максимальная температура: {max_temp}°C, {prob}, Влажность:  {humi}%, Скорость ветра {wind} км/ч'
+        message = f'Минимальная температура: {min_temp}°C\n Максимальная температура: {max_temp}°C\n {prob}\n Влажность воздуха: {humi}%\n Скорость ветра: {wind} км/ч'
         return message
-
-
-
-# forecast = Forecast('Дубай','Париж',0,3)
-# print(forecast.get_forecast_start())
-# print(forecast.get_all_data())
