@@ -1,0 +1,230 @@
+{
+    "Moscow": {
+        "Day 1": {
+            "day": 1,
+            "min_temperature": -1.1,
+            "max_temperature": 0.0,
+            "humidity": 82,
+            "wind_speed": 9.0,
+            "probability_rain": 0,
+            "probability_snow": 65,
+            "lat": 55.752,
+            "lon": 37.619
+        },
+        "Day 2": {
+            "day": 2,
+            "min_temperature": -1.7,
+            "max_temperature": 1.1,
+            "humidity": 93,
+            "wind_speed": 9.0,
+            "probability_rain": 0,
+            "probability_snow": 25,
+            "lat": 55.752,
+            "lon": 37.619
+        },
+        "Day 3": {
+            "day": 3,
+            "min_temperature": -3.9,
+            "max_temperature": 0.0,
+            "humidity": 91,
+            "wind_speed": 13.0,
+            "probability_rain": 0,
+            "probability_snow": 25,
+            "lat": 55.752,
+            "lon": 37.619
+        },
+        "Day 4": {
+            "day": 4,
+            "min_temperature": -3.3,
+            "max_temperature": -1.1,
+            "humidity": 89,
+            "wind_speed": 17.0,
+            "probability_rain": 25,
+            "probability_snow": 0,
+            "lat": 55.752,
+            "lon": 37.619
+        },
+        "Day 5": {
+            "day": 5,
+            "min_temperature": -1.7,
+            "max_temperature": 0.0,
+            "humidity": 92,
+            "wind_speed": 7.0,
+            "probability_rain": 0,
+            "probability_snow": 1,
+            "lat": 55.752,
+            "lon": 37.619
+        }
+    },
+    "London": {
+        "Day 1": {
+            "day": 1,
+            "min_temperature": 5.6,
+            "max_temperature": 7.2,
+            "humidity": 69,
+            "wind_speed": 15.0,
+            "probability_rain": 87,
+            "probability_snow": 0,
+            "lat": 51.514,
+            "lon": -0.107
+        },
+        "Day 2": {
+            "day": 2,
+            "min_temperature": 9.4,
+            "max_temperature": 13.3,
+            "humidity": 90,
+            "wind_speed": 9.0,
+            "probability_rain": 21,
+            "probability_snow": 0,
+            "lat": 51.514,
+            "lon": -0.107
+        },
+        "Day 3": {
+            "day": 3,
+            "min_temperature": 8.9,
+            "max_temperature": 11.7,
+            "humidity": 86,
+            "wind_speed": 9.0,
+            "probability_rain": 1,
+            "probability_snow": 0,
+            "lat": 51.514,
+            "lon": -0.107
+        },
+        "Day 4": {
+            "day": 4,
+            "min_temperature": 6.1,
+            "max_temperature": 10.6,
+            "humidity": 85,
+            "wind_speed": 6.0,
+            "probability_rain": 2,
+            "probability_snow": 0,
+            "lat": 51.514,
+            "lon": -0.107
+        },
+        "Day 5": {
+            "day": 5,
+            "min_temperature": 5.6,
+            "max_temperature": 8.9,
+            "humidity": 89,
+            "wind_speed": 6.0,
+            "probability_rain": 3,
+            "probability_snow": 0,
+            "lat": 51.514,
+            "lon": -0.107
+        }
+    },
+    "Omsk": {
+        "Day 1": {
+            "day": 1,
+            "min_temperature": -8.3,
+            "max_temperature": -6.7,
+            "humidity": 90,
+            "wind_speed": 11.0,
+            "probability_rain": 0,
+            "probability_snow": 1,
+            "lat": 54.991,
+            "lon": 73.371
+        },
+        "Day 2": {
+            "day": 2,
+            "min_temperature": -10.0,
+            "max_temperature": -5.6,
+            "humidity": 91,
+            "wind_speed": 13.0,
+            "probability_rain": 0,
+            "probability_snow": 1,
+            "lat": 54.991,
+            "lon": 73.371
+        },
+        "Day 3": {
+            "day": 3,
+            "min_temperature": -10.6,
+            "max_temperature": -8.3,
+            "humidity": 91,
+            "wind_speed": 13.0,
+            "probability_rain": 0,
+            "probability_snow": 1,
+            "lat": 54.991,
+            "lon": 73.371
+        },
+        "Day 4": {
+            "day": 4,
+            "min_temperature": -9.4,
+            "max_temperature": -7.2,
+            "humidity": 88,
+            "wind_speed": 17.0,
+            "probability_rain": 0,
+            "probability_snow": 60,
+            "lat": 54.991,
+            "lon": 73.371
+        },
+        "Day 5": {
+            "day": 5,
+            "min_temperature": -10.0,
+            "max_temperature": -2.2,
+            "humidity": 85,
+            "wind_speed": 18.0,
+            "probability_rain": 0,
+            "probability_snow": 20,
+            "lat": 54.991,
+            "lon": 73.371
+        }
+    },
+    "Tomsk": {
+        "Day 1": {
+            "day": 1,
+            "min_temperature": -18.9,
+            "max_temperature": -13.3,
+            "humidity": 79,
+            "wind_speed": 6.0,
+            "probability_rain": 0,
+            "probability_snow": 2,
+            "lat": 56.489,
+            "lon": 84.952
+        },
+        "Day 2": {
+            "day": 2,
+            "min_temperature": -16.1,
+            "max_temperature": -13.3,
+            "humidity": 79,
+            "wind_speed": 11.0,
+            "probability_rain": 0,
+            "probability_snow": 42,
+            "lat": 56.489,
+            "lon": 84.952
+        },
+        "Day 3": {
+            "day": 3,
+            "min_temperature": -15.6,
+            "max_temperature": -12.8,
+            "humidity": 77,
+            "wind_speed": 18.0,
+            "probability_rain": 0,
+            "probability_snow": 25,
+            "lat": 56.489,
+            "lon": 84.952
+        },
+        "Day 4": {
+            "day": 4,
+            "min_temperature": -10.0,
+            "max_temperature": -8.3,
+            "humidity": 77,
+            "wind_speed": 11.0,
+            "probability_rain": 0,
+            "probability_snow": 6,
+            "lat": 56.489,
+            "lon": 84.952
+        },
+        "Day 5": {
+            "day": 5,
+            "min_temperature": -10.6,
+            "max_temperature": -7.8,
+            "humidity": 85,
+            "wind_speed": 7.0,
+            "probability_rain": 0,
+            "probability_snow": 55,
+            "lat": 56.489,
+            "lon": 84.952
+        }
+    }
+}
